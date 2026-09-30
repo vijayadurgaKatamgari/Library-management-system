@@ -1,0 +1,5 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Members</title><link rel="stylesheet" href="css/style.css"></head>
+<body><nav><div class="brand">📚 LibraNova</div><div class="navlinks"><a href="dashboard.html">Dashboard</a><a href="books.html">Books</a><a class="active" href="members.html">Members</a><a href="circulation.html">Circulation</a><a href="payments.html">Payments</a><a href="api/logout">Logout</a></div></nav>
+<main><div class="page-head"><div><h1>👥 Members</h1><p>Manage library members.</p></div></div>
+<div class="panel"><h2>Register Member</h2><form class="form-grid" action="api/members" method="post"><input name="name" placeholder="Full name" required><input name="email" type="email" placeholder="Email" required><input name="phone" placeholder="Phone"><button class="btn primary">Register Member</button></form></div>
+<div class="panel"><h2>Member Directory</h2><div id="membersTable"></div></div></main><script src="js/app.js"></script><script>loadMembers();</script></body></html>
